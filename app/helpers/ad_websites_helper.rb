@@ -1,0 +1,2 @@
+module AdWebsitesHelper
+end

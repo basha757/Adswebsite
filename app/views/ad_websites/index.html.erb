@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<table class="table table-striped table-bordered table-hover">
+<thead class= "thead-dark">
+    <tr>
+      <th>Name</th>
+      <th>Name of bussiness</th>
+      <th>Email</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ad_websites.each do |ad_website| %>
+      <tr>
+        <td><%= ad_website.Name %></td>
+        <td><%= ad_website.Name_of_Bussiness %></td>
+        <td><%= ad_website.Email %></td>
+        <td><%= ad_website.Phone_No %></td>
+        <td><%= link_to 'Show', ad_website %></td>
+        <td><%= link_to 'Edit', edit_ad_website_path(ad_website) %></td>
+        <td><%= link_to 'Destroy', ad_website, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ad Website', new_ad_website_path,class:"btn btn-secondary"%>
+

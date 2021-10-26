@@ -1,0 +1,53 @@
+<%= form_with(model: ad_website) do |form| %>
+  <% if ad_website.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ad_website.errors.count, "error") %> prohibited this ad_website from being saved:</h2>
+
+      <ul>
+        <% ad_website.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  
+
+  <div class="field form-group">
+    <%= form.label :Name_of_Bussiness %>
+    <%= form.text_field :Name_of_Bussiness,class:"form-control" %>
+  </div>
+
+  
+
+  <div class="field form-group">
+    <%= form.label :Email %>
+    <%= form.text_field :Email,class:"form-control"%>
+  </div>
+
+  
+
+  <div class="field form-group">
+  <%= form.label :Description %>
+  <%= form.text_field :Phone_No,class:"form-control"%>
+  </div>
+
+  <div class="field form-group">
+  <%= form.label :Phone_no %>
+  <%= form.text_field :Description,class:"form-control"%>
+  </div>
+
+  <div class="field form-group">
+  
+  <%= form.number_field :user_id, id: :ad_website_user_id,class:"form-control",value: current_user.id,type: :hidden %>
+  </div>
+   
+  
+  <%= form.label :image %>
+  <%= form.file_field :image,class: "form-control" %>
+  
+  <br/>
+  <div class="actions">
+    <%= form.submit class:"btn btn-secondary"%>
+  </div>
+<% end %>

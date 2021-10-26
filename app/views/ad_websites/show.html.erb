@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<div class="jumbotron">
+  <h1 class="display-4"> 
+  
+  <%= @ad_website.Name_of_Bussiness %>
+  
+  </h1>
+  <p class="lead">
+  <%= @ad_website.Name%>   |
+  <%= @ad_website.Email %> 
+  <br/>
+  <br/>
+  <%= @ad_website.Phone_No %>
+  <br/>
+  <br/>
+ 
+  <%= image_tag(@ad_website.image, draggable: "true", id: "drag1") %>
+
+</div>
+
+
+<br/><br/>
+
+<%= link_to 'Edit', edit_ad_website_path(@ad_website),class:"btn btn-secondary" %>
+
+<%= link_to 'Back',  ad_websites_path, class:"btn btn-dark" %>
+
