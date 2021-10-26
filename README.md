@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+At home ,u can see Advertisements 
 
-Things you may want to cover:
+A user can login,sign up
 
-* Ruby version
+After login , user can add,delete advertisements
 
-* System dependencies
+Advertisements have fields like name of bussiness,image,email etc
 
-* Configuration
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
